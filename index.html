@@ -1,69 +1,135 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Profil Professionnel</title>
+    <title>Marlen – The Art of Elegance & Seduction</title>
     <style>
-        /* Styles de base pour rendre le site joli et adapté aux téléphones */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #ffffff;
-            text-align: center;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            line-height: 1.6;
         }
         .banner {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('lien-de-ta-banniere.jpg') no-repeat center center/cover;
-            height: 250px;
+            background: linear-gradient(135deg, #1f1115 0%, #0a0a0a 100%);
+            height: 220px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 2px solid #ff3366;
+            text-align: center;
+            border-bottom: 1px solid #3a2228;
+            padding: 0 20px;
+        }
+        .banner h1 {
+            font-size: 26px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            color: #c5a880;
+            margin: 0;
+            text-transform: uppercase;
         }
         .container {
-            padding: 20px;
+            padding: 30px 20px;
             max-width: 600px;
             margin: 0 auto;
         }
+        h2 {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #c5a880;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #222;
+            padding-bottom: 8px;
+        }
         .description {
-            font-size: 16px;
-            line-height: 1.6;
-            margin: 20px 0;
-            color: #cccccc;
+            font-size: 15px;
+            color: #b5b5b5;
+            text-align: justify;
+            background-color: #141414;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #1f1f1f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
         .gallery {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
-            margin: 30px 0;
+            margin: 25px 0;
         }
         .gallery img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid #333;
+            border-radius: 6px;
+            border: 1px solid #252525;
         }
         .rates-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #1e1e1e;
+            margin: 25px 0;
+            background-color: #141414;
             border-radius: 8px;
             overflow: hidden;
-        }
-        .rates-table th, .rates-table td {
-            padding: 12px;
-            border-bottom: 1px solid #333;
-            text-align: left;
+            border: 1px solid #1f1f1f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
         .rates-table th {
-            background-color: #ff3366;
-            color: white;
+            padding: 16px;
+            background-color: #211518;
+            color: #c5a880;
+            font-weight: 500;
+            text-align: left;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #3a2228;
+        }
+        .rates-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #1f1f1f;
+            font-size: 15px;
+        }
+        .rates-table tr:last-child td {
+            border-bottom: none;
+        }
+        .rates-table tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+        .price-tag {
+            color: #c5a880;
+            font-weight: 600;
+            text-align: right;
+        }
+        
+        /* Boutons de Contact */
+        .contact-section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .btn-contact {
+            display: block;
+            background-color: #141414;
+            color: #c5a880;
+            text-decoration: none;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border: 1px solid #3a2228;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            text-transform: uppercase;
+        }
+        .btn-contact:active {
+            background-color: #211518;
         }
     </style>
 </head>
@@ -71,55 +137,73 @@
 
     <!-- Section Bannière -->
     <div class="banner">
-         <!-- Ton titre principal s'affichera ici -->
-         <h1>Nom ou Titre du Profil</h1>
+         <h1>Marlen<br><span style="font-size: 14px; color: #8a1c36; letter-spacing: 1px;">The Art of Elegance & Seduction</span></h1>
     </div>
 
     <div class="container">
         <!-- Section Présentation / Description -->
-        <h2>Présentation</h2>
+        <h2>Presentation</h2>
         <p class="description">
-            Écris ta description ici. Tu pourras modifier ce texte pour te présenter, indiquer tes disponibilités, ta ville ou tes spécificités.
+            Welcome to my private world. My name is Marlen, a passionate, sensual, and highly attentive woman dedicated to curating moments that transcend the ordinary. I believe that true luxury lies in the quality of time spent together—whether you are seeking the grace of an elegant dinner, the thrill of engaging conversation, or an absolute moment of intimate connection, I am here to provide the perfect companionship.<br><br>
+            My approach is defined by my natural sweetness, my keen sense of intuition, and a genuine desire to cater to your needs with complete discretion. I invite you to step away from the stress of your daily life and join me in a refined sanctuary where pleasure and sophistication meet. Let’s create a bespoke, unforgettable experience tailored exclusively to your desires.
         </p>
 
-        <hr style="border: 0.5px solid #333;">
-
         <!-- Section Galerie Photos -->
-        <h2>Galerie Photos</h2>
+        <h2>Gallery</h2>
         <div class="gallery">
-            <!-- Remplace 'photo1.jpg', etc. par les vrais liens de tes images plus tard -->
-            <img src="https://via.placeholder.com/300x200" alt="Photo 1">
-            <img src="https://via.placeholder.com/300x200" alt="Photo 2">
-            <img src="https://via.placeholder.com/300x200" alt="Photo 3">
-            <img src="https://via.placeholder.com/300x200" alt="Photo 4">
+            <img src="https://via.placeholder.com/300x400" alt="Photo 1">
+            <img src="https://via.placeholder.com/300x400" alt="Photo 2">
+            <img src="https://via.placeholder.com/300x400" alt="Photo 3">
+            <img src="https://via.placeholder.com/300x400" alt="Photo 4">
         </div>
 
-        <hr style="border: 0.5px solid #333;">
-
         <!-- Section Tarifs -->
-        <h2>Tarifs & Prestations</h2>
+        <h2>Rates & Services</h2>
         <table class="rates-table">
             <thead>
                 <tr>
-                    <th>Durée / Service</th>
-                    <th>Tarif</th>
+                    <th>Duration / Service</th>
+                    <th style="text-align: right;">Rate</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Exemple : 1 Heure</td>
-                    <td>000 €</td>
+                    <td>1 Hour</td>
+                    <td class="price-tag">150 €</td>
                 </tr>
                 <tr>
-                    <td>Exemple : 2 Heures</td>
-                    <td>000 €</td>
+                    <td>2 Hours</td>
+                    <td class="price-tag">300 €</td>
                 </tr>
                 <tr>
-                    <td>Exemple : Déplacement</td>
-                    <td>Sur demande</td>
+                    <td>3 Hours</td>
+                    <td class="price-tag">500 €</td>
+                </tr>
+                <tr>
+                    <td>Overnight</td>
+                    <td class="price-tag">800 €</td>
+                </tr>
+                <tr>
+                    <td>Full Day</td>
+                    <td class="price-tag">1500 €</td>
+                </tr>
+                <tr>
+                    <td>Evening / Events</td>
+                    <td class="price-tag">500 €</td>
+                </tr>
+                <tr>
+                    <td>Couples (Party or Wedding)</td>
+                    <td class="price-tag">2500 €</td>
                 </tr>
             </tbody>
         </table>
+
+        <!-- Section Contact direct -->
+        <h2>Booking & Contact</h2>
+        <div class="contact-section">
+            <a href="https://wa.me/33774332782" class="btn-contact" target="_blank">💬 Contact me on WhatsApp</a>
+            <a href="https://t.me/Meli2824" class="btn-contact" target="_blank">✈️ Contact me on Telegram</a>
+        </div>
     </div>
 
 </body>
