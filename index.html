@@ -138,9 +138,32 @@
             text-transform: uppercase;
         }
         footer {
-            margin-top: 50px;
+            margin-top: 60px;
             padding: 20px 0;
             border-top: 1px solid #1f1f1f;
+        }
+        summary {
+            cursor: pointer;
+            color: #8A2BE2;
+            text-decoration: underline;
+            font-size: 13px;
+            font-weight: 500;
+            list-style: none; /* Cache la petite flèche */
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Cache la petite flèche sur Safari/Chrome */
+        }
+        .hidden-banners {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .hidden-banners img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #222;
         }
     </style>
 </head>
@@ -197,9 +220,41 @@
     </div>
 
     <footer>
-        <p style="text-align: center; font-size: 13px;">
-            <a href="./partenaires.html" style="color: #8A2BE2; text-decoration: underline; font-weight: 500;">Nos Partenaires Officiels</a>
-        </p>
+        <div style="text-align: center;">
+            <details>
+                <summary>Nos Partenaires Officiels</summary>
+                <div class="hidden-banners">
+                    <!-- Escort Directory -->
+                    <a href="https://escortdirectory.xxx/"><img src="https://escortdirectory.xxx/wp-content/uploads/2020/05/468-x-60.jpg" alt="Escort Directory"></a>
+
+                    <!-- Erotic Guide -->
+                    <a href="https://www.erotic-guide.com" target="_blank" rel="noopener noreferrer"><img src="https://www.erotic-guide.com/banner/erotic_guide_75x75.gif" alt="Erotic Guide Worldwide Escort Directory"></a>
+
+                    <!-- 6ladies -->
+                    <a href="https://6ladies.com" target="_blank" rel="noopener"><img src="https://6ladies.com/i/6ladiesbanner.jpg" alt="Banner 6ladies.com"></a>
+
+                    <!-- Punterlink -->
+                    <div align="center"><a href="https://www.punterlink.co.uk/main/coventry-escorts" target="_blank"><img src="https://www-punterlink-co-uk.dualstackcdn.com/resources/graphics/rlinks/1st6.gif" alt="Punterlink Coventry Escorts" width="160" height="60" border="0"></a><br><p style="font-size: 0.8em;font-weight: bold; margin-top: 5px;"><a href="https://www.punterlink.co.uk/main/coventry-escorts" target="_blank" style="color: #666;">Coventry Escorts</a></p></div>
+
+                    <!-- Devozki -->
+                    <a href="https://devozki.com/"><img alt="Devozki.com" src="https://devozki.com/wp-content/uploads/2020/10/devozki150x75.png"></a>
+
+                    <!-- Escortlist -->
+                    <a href="https://escortlist.vip/"><img alt="Escortlist.vip" src="https://escortlist.vip/wp-content/uploads/2020/08/468x60.png"></a>
+
+                    <!-- EroKinks -->
+                    <a target="_blank" href="https://erokinks.com/"><img border="0" src="https://erokinks.com/wp-content/uploads/2023/06/EK2.gif" alt="EroKinks" width="468" height="60"></a>
+
+                    <!-- Escort Links -->
+                    <a href="https://www.escort-links.com" target="_blank" style="color: #666; font-size: 13px;">Escort-Links.com</a>  
+
+                    <!-- 24Escort Austria -->
+                    <p style="font-size: 13px; margin: 5px 0 0 0;">
+                        <a href="https://www.24escort.at/" target="_blank" rel="noopener" style="color: #8A2BE2; text-decoration: underline; font-weight: bold;">Partenaire officiel 24Escort Austria</a>
+                    </p>
+                </div>
+            </details>
+        </div>
     </footer>
     
 </body>
